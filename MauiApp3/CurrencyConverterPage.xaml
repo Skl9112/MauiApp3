@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp3.CurrencyConverterPage"
+             Title="Currency Converter">
+    <StackLayout Padding="20">
+        <DatePicker x:Name="DatePicker" DateSelected="OnDateSelected" />
+        <Picker x:Name="CurrencyPicker" Title="Select Currency" />
+        <Entry x:Name="AmountEntry" Placeholder="Enter the amount in BYN " Keyboard="Numeric" />
+        <Button Text="Convert" Clicked="OnConvertClicked" />
+        <Label x:Name="ResultLabel" />
+    </StackLayout>
+</ContentPage>
